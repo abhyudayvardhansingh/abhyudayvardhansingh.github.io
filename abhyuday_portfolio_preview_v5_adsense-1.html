@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhyuday Vardhan Singh — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5689310277990248" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#f3f1ec;--ink:#171715;--muted:#77766f;--line:#d8d5cc;--paper:#faf9f5;--ease:cubic-bezier(.2,.75,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}::selection{background:#24231f;color:#fff}
+.progress{position:fixed;z-index:99;top:0;left:0;height:3px;width:0;background:#25241f}
+.cursor-glow{position:fixed;width:280px;height:280px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,#c8c1b1 0%,transparent 68%);opacity:.22;transform:translate(-50%,-50%)}
+.wrap{width:min(1180px,calc(100% - 56px));margin:auto;position:relative;z-index:1}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font:800 16px Manrope;letter-spacing:-.06em}.brand i{font-style:normal;color:#8b8578}
+.nav{display:flex;gap:30px;font-size:12px;color:var(--muted)}.nav a{position:relative;padding:10px 0;transition:color .3s}.nav a:after{content:"";position:absolute;left:0;bottom:4px;height:1px;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}.nav a:hover{color:var(--ink)}.nav a:hover:after{transform:scaleX(1);transform-origin:left}
+.hero{min-height:690px;display:grid;grid-template-columns:1fr .92fr;align-items:center;gap:54px;padding:75px 0 90px;border:0}
+.kicker{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);font-weight:700;display:flex;align-items:center;gap:12px}.kicker:before{content:"";width:28px;height:1px;background:#8d887e}
+.hero h1{font:500 clamp(56px,7.5vw,100px)/.94 Manrope;letter-spacing:-.085em;margin:26px 0 25px}.hero h1 .line{display:block;overflow:hidden}.hero h1 .line span{display:block;transform:translateY(115%);animation:rise 1.05s var(--ease) forwards}.hero h1 .line:nth-child(2) span{animation-delay:.16s;color:#969083}.hero-copy{font-size:15px;line-height:1.9;color:var(--muted);max-width:460px;opacity:0;animation:fadeUp .9s .45s forwards}
+.actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap;opacity:0;animation:fadeUp .9s .62s forwards}
+.btn{padding:15px 21px;border:1px solid var(--ink);font-size:12px;display:inline-flex;align-items:center;gap:20px;position:relative;overflow:hidden;isolation:isolate;transition:color .45s,transform .4s var(--ease)}.btn:before{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(102%);transition:transform .45s var(--ease);z-index:-1}.btn:hover{color:white;transform:translateY(-5px)}.btn:hover:before{transform:translateY(0)}.btn.secondary{border-color:var(--line)}
+.hero-visual{height:510px;position:relative;overflow:hidden;background:#dedbd3;opacity:0;transform:translateY(35px) scale(.97);animation:visualIn 1.2s .25s var(--ease) forwards}
+.hero-visual img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%);transform:scale(1.12);transition:transform 1.5s var(--ease),filter 1s}.hero-visual:hover img{transform:scale(1.02);filter:grayscale(35%)}
+.visual-shade{position:absolute;inset:0;background:linear-gradient(145deg,#17171512,#17171544)}.visual-caption{position:absolute;bottom:22px;left:24px;color:white;font-size:10px;text-transform:uppercase;letter-spacing:.18em}.visual-index{position:absolute;top:22px;right:24px;color:white;font:12px Manrope}
+.float-tag{position:absolute;right:-18px;bottom:58px;background:var(--paper);padding:17px 20px;box-shadow:0 12px 35px #00000012;font-size:10px;letter-spacing:.12em;text-transform:uppercase;animation:float 5s ease-in-out infinite}
+section{padding:112px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:55px}.section-head h2{font:500 clamp(38px,5vw,62px)/1 Manrope;letter-spacing:-.075em;margin:0}.section-head p{font-size:10px;color:var(--muted);letter-spacing:.15em}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px}.about-lead{font:500 clamp(25px,3vw,34px)/1.35 Manrope;letter-spacing:-.05em;max-width:520px}.about-copy{color:var(--muted);line-height:1.95;font-size:14px;max-width:470px}
+.image-strip{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:65px}.image-panel{height:280px;overflow:hidden;position:relative;background:#ddd}.image-panel img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%);transition:transform 1.2s var(--ease),filter .8s}.image-panel:hover img{transform:scale(1.07);filter:grayscale(25%)}.image-panel span{position:absolute;bottom:18px;left:20px;color:white;font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 1px 8px #000}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{border:1px solid var(--line);padding:28px;min-height:205px;position:relative;overflow:hidden;transition:transform .55s var(--ease),background .5s,border-color .5s}.tile:after{content:"";position:absolute;width:170px;height:170px;border:1px solid #c8c3b8;border-radius:50%;right:-90px;bottom:-100px;transition:transform .7s var(--ease)}.tile:hover{transform:translateY(-10px);background:#e9e6df;border-color:#aaa498}.tile:hover:after{transform:scale(2.2)}.tile small{color:var(--muted);font-size:10px;letter-spacing:.14em;text-transform:uppercase}.tile h3{font:600 25px Manrope;letter-spacing:-.06em;margin-top:55px;position:relative;z-index:1}.tile .arrow{position:absolute;right:25px;top:25px;font-size:20px;transition:transform .4s}.tile:hover .arrow{transform:translate(5px,-5px)}
+.qualifications{display:grid;grid-template-columns:1fr 1fr;gap:18px}.qualification{padding:28px 0;border-top:1px solid var(--line);font:500 22px Manrope;letter-spacing:-.045em}.qualification span{display:block;color:var(--muted);font:10px 'DM Sans';letter-spacing:.14em;text-transform:uppercase;margin-bottom:15px}
+.project{background:#e5e2da;padding:78px;display:grid;grid-template-columns:1fr .7fr;gap:45px;align-items:center;position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #c6c1b5;border-radius:50%;right:-100px;top:-190px;box-shadow:0 0 0 35px #ffffff16,0 0 0 70px #ffffff12}.project h2{font:500 clamp(40px,5.5vw,66px)/1.02 Manrope;letter-spacing:-.08em;margin:20px 0}.project p{color:var(--muted);line-height:1.85;font-size:14px;max-width:430px}.project .btn{margin-top:18px;position:relative;z-index:2}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px}.contact-grid h2{font:500 clamp(44px,5.5vw,68px)/.98 Manrope;letter-spacing:-.08em;margin:18px 0}.contact-links{display:flex;flex-direction:column;margin-top:25px}.contact-links a{padding:19px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:13px;transition:padding .35s,color .35s}.contact-links a:hover{padding-left:12px;color:#77766f}.contact-form{display:grid;gap:12px}.contact-form input,.contact-form textarea{width:100%;background:transparent;border:1px solid var(--line);padding:17px;font:13px 'DM Sans';outline:none;transition:border-color .3s,background .3s,transform .3s}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--ink);background:var(--paper);transform:translateY(-2px)}.contact-form textarea{min-height:135px;resize:vertical}.contact-form button{cursor:pointer;background:var(--ink);color:white;border:1px solid var(--ink);padding:17px 22px;font:600 12px 'DM Sans';justify-self:start;transition:transform .35s,background .35s}.contact-form button:hover{transform:translateY(-4px);background:#55534c}
+footer{padding:28px 0;display:flex;justify-content:space-between;color:var(--muted);font-size:11px}
+.reveal{opacity:0;transform:translateY(38px);transition:opacity 1s var(--ease),transform 1s var(--ease)}.reveal.show{opacity:1;transform:translateY(0)}.d1{transition-delay:.12s}.d2{transition-delay:.24s}
+@keyframes rise{to{transform:translateY(0)}}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@keyframes visualIn{to{opacity:1;transform:translateY(0) scale(1)}}@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-13px) rotate(1deg)}}
+@media(max-width:760px){.wrap{width:calc(100% - 36px)}header{height:70px}.nav{gap:13px;font-size:10px}.hero{grid-template-columns:1fr;padding:65px 0;gap:36px}.hero-visual{height:360px}.float-tag{right:10px}.about-grid,.contact-grid,.project{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:1fr}.tile{min-height:155px}.tile h3{margin-top:35px}.qualifications{grid-template-columns:1fr}.project{padding:38px 25px}.image-strip{grid-template-columns:1fr}.image-panel{height:230px}section{padding:78px 0}.section-head{margin-bottom:38px}footer{gap:15px;flex-wrap:wrap}.cursor-glow{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+.ad-wrap{width:min(1180px,calc(100% - 56px));margin:0 auto 76px;position:relative;z-index:1;min-height:90px;display:flex;align-items:center;justify-content:center}
+.ad-wrap .adsbygoogle{display:block;width:100%;min-height:90px}
+@media(max-width:700px){.ad-wrap{width:calc(100% - 36px);margin-bottom:54px;min-height:90px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><div class="cursor-glow" id="glow"></div>
+<div class="wrap">
+<header><a class="brand" href="#home">AVS<i>.</i></a><nav class="nav"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#qualifications">Qualifications</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero" id="home">
+<div><div class="kicker">Hey, I’m Abhyuday.</div><h1><span class="line"><span>Thoughtful</span></span><span class="line"><span>work. <em>Clear</em></span></span><span class="line"><span>outcomes.</span></span></h1><p class="hero-copy">Specializing in SQL, Data Security and Data Analysis. Explore my areas of focus and get in touch to discuss your next idea.</p><div class="actions"><a class="btn" href="#contact">Start a conversation <b>↗</b></a><a class="btn secondary" href="https://github.com/Abhyudayvardhansingh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+<div class="hero-visual"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85" alt="Dramatic monochrome mountain landscape"><div class="visual-shade"></div><div class="visual-index">01 / 04</div><div class="visual-caption">Curiosity · Precision · Craft</div><div class="float-tag">Open to ideas ↗</div></div>
+</section>
+<section id="about"><div class="section-head reveal"><h2>A little about me.</h2><p>01 / INTRODUCTION</p></div><div class="about-grid"><div class="about-lead reveal">I’m interested in using data and technology to make complex things clearer.</div><p class="about-copy reveal d1">My areas of focus include working with data, understanding how information can be protected, and turning information into useful insights.</p></div><div class="image-strip"><div class="image-panel reveal"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85" alt="Minimal modern workspace"><span>Focus / Process</span></div><div class="image-panel reveal d1"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85" alt="Abstract technology circuit detail"><span>Technology / Detail</span></div></div></section>
+
+<div class="ad-wrap" aria-label="Advertisement">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5689310277990248"
+       data-ad-slot="4716737991"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<section id="expertise"><div class="section-head reveal"><h2>Areas of focus.</h2><p>02 / SPECIALIZATIONS</p></div><div class="cards"><article class="tile reveal"><small>01 — Querying</small><span class="arrow">↗</span><h3>SQL</h3></article><article class="tile reveal d1"><small>02 — Protection</small><span class="arrow">↗</span><h3>Data Security</h3></article><article class="tile reveal d2"><small>03 — Insights</small><span class="arrow">↗</span><h3>Data Analysis</h3></article></div></section>
+<section id="qualifications"><div class="section-head reveal"><h2>Qualifications.</h2><p>03 / EDUCATION</p></div><div class="qualifications"><div class="qualification reveal"><span>01 / Degree</span>B.Tech in Computer Science &amp; Engineering</div><div class="qualification reveal d1"><span>02 / Degree</span>Master's Degree</div></div></section>
+<section id="project"><div class="project reveal"><div><div class="kicker">Have something in mind?</div><h2>Want me to make a project for you?</h2><p>Tell me what you’re working on. Share your idea, goals, or the problem you want to solve, and let’s start a conversation.</p></div><div><a class="btn" href="#contact">Describe your project <b>↗</b></a></div></div></section>
+<section id="contact"><div class="section-head reveal"><h2>Let’s connect.</h2><p>04 / CONTACT</p></div><div class="contact-grid"><div class="reveal"><div class="kicker">Contact</div><h2>Have a project<br>to discuss?</h2><p class="about-copy">Contact me directly or send a short description using the form.</p><div class="contact-links"><a href="mailto:abhyudayvardhansingh@gmail.com">Email <span>↗</span></a><a href="https://github.com/Abhyudayvardhansingh" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://in.linkedin.com/in/abhyuday-vardhan-singh-938124426" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div>
+<form class="contact-form reveal d1" id="projectForm"><input id="visitorName" placeholder="Your name" required><input id="visitorEmail" type="email" placeholder="Your email" required><textarea id="projectDetails" placeholder="Describe your work or project..." required></textarea><button type="submit">Send project details ↗</button></form></div></section>
+</main><footer><span>© 2026 Abhyuday Vardhan Singh</span><span>Designed with clarity.</span></footer>
+</div>
+<script>
+const progress=document.getElementById('progress');function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'}addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.14});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const glow=document.getElementById('glow');if(matchMedia('(pointer:fine)').matches){addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'})}
+document.getElementById('projectForm').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('visitorName').value,em=document.getElementById('visitorEmail').value,d=document.getElementById('projectDetails').value;location.href='mailto:abhyudayvardhansingh@gmail.com?subject='+encodeURIComponent('Project enquiry from '+n)+'&body='+encodeURIComponent('Name: '+n+'\nEmail: '+em+'\n\nProject details:\n'+d)});
+</script>
+</body></html>
